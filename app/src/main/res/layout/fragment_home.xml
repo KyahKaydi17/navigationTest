@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/chargeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Charge"
+        android:textSize="18sp"
+        app:backgroundTint="#003EA2"
+        app:cornerRadius="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clearBtn"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/deep_blue"
+        android:text="Clear"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="15dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="21dp" />
+
+
+    <android.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/faint_light_blue"
+        android:iconifiedByDefault="false"
+        app:queryHint="Search" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subtotalTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:background="#FEFEFE"
+                android:text="Subtotal: ₱0.00"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/selectedItemCountTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:background="#FEFEFE"
+                android:text="Selected Items: 0"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/faint_light_blue"
+        tools:listitem="@layout/item_product" />
+
+</LinearLayout>

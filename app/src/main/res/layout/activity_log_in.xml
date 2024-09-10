@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE71D">
+
+    <!-- Logo Image View -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#ECE71D"
+        android:src="@drawable/lostdonkey" /> <!-- Replace @drawable/your_logo with your logo resource -->
+
+    <!-- Welcome Header -->
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:shadowColor="@color/black"
+        android:text="LOGIN"
+        android:textColor="#003EA2"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Email Edit Text -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext_bg"
+
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp" />
+
+    <!-- Password Edit Text -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext_bg"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp" />
+
+    <!-- Log In Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonLogIn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#003EA2"
+        android:text="Log In"
+        app:cornerRadius="12dp" />
+
+    <!-- Sign Up Text (Clickable) -->
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Don't have an account? Sign up!"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Forgot Password"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:backgroundTint="@android:color/transparent"
+    android:backgroundTintMode="screen"
+    android:orientation="vertical">
+
+    <!-- Cafe Name -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/subtotalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+
+        android:text="Subtotal: ₱0.00"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <!-- Divider -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <View
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#000" />
+
+    <!-- Product Entries (generated dynamically) -->
+    <LinearLayout
+        android:id="@+id/productEntriesLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="360dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="#000" />
+
+    <!-- Subtotal -->
+
+
+    <!-- Payment Method -->
+    <TextView
+        android:id="@+id/employee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Payment Method: Cash"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/paymentMethodTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Payment Method: Cash"
+        android:textColor="@color/black" />
+
+    <!-- Date and Time -->
+    <TextView
+        android:id="@+id/dateAndTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Date: [Current Date] | Time: [Current Time]"
+        android:textColor="@color/black" />
+
+</LinearLayout>

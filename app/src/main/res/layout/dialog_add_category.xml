@@ -1,0 +1,50 @@
+<!-- dialog_add_category.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/deeper_blue"
+        app:cardCornerRadius="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sea_blue"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/deeper_blue"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="16dp"
+                android:paddingBottom="8dp"
+                android:text="Enter New Category"
+                android:textColor="@color/lively_melon"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextNewCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:background="@drawable/rounded_edittext_bg"
+                android:hint="New Category"
+                android:inputType="text" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

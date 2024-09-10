@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sales"
+            android:icon="@drawable/baseline_point_of_sale_24"
+            android:title="Sales" />
+        <item
+            android:id="@+id/transactions"
+            android:icon="@drawable/baseline_receipt_24"
+            android:title="Transactions" />
+
+
+        <item
+            android:id="@+id/Inventory"
+            android:icon="@drawable/inventory"
+            android:title="Inventory" />
+
+        <item
+            android:id="@+id/menu_logout"
+            android:title="Logout" /> <!-- Set showAsAction to never to display it in the overflow menu -->
+
+    </group>
+</menu>

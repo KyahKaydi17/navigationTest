@@ -1,0 +1,7 @@
+<resources>
+    <array name="categories">
+        <item></item>
+
+        <!-- Add more categories if needed -->
+    </array>
+</resources>

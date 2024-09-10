@@ -1,0 +1,36 @@
+<!-- Replace with your layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Your UI components for adding items -->
+
+    <EditText
+        android:id="@+id/editTextItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/select_category_hint" />
+
+    <EditText
+        android:id="@+id/editTextItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Item Price" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Add Item"
+        app:cornerRadius="12dp"/>
+
+</LinearLayout>

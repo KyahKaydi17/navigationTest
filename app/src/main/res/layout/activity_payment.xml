@@ -1,0 +1,96 @@
+<!-- activity_payment.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE71D"
+    android:orientation="vertical"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/subtotalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/faint_light_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Subtotal: $0.0"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="39dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/faint_light_blue"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/paymentMethodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Payment Method"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash" />
+
+            <RadioButton
+                android:id="@+id/radioCreditCard5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit Card" />
+
+            <RadioButton
+                android:id="@+id/radioGcash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gcash" />
+
+            <RadioButton
+                android:id="@+id/radioGrabPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GrabPay" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirmPaymentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/dull_orange"
+        android:text="Confirm Payment"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="20dp" />
+</LinearLayout>

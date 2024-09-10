@@ -1,0 +1,26 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- You can add a header view here, like an ImageView or user details -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="131dp"
+        android:layout_gravity="center"
+        android:background="#ECE71D"
+        android:padding="16dp"
+        android:src="@drawable/lostdonkey" />
+
+    <!-- TextView to display the welcome message -->
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:padding="8dp"/>
+</LinearLayout>

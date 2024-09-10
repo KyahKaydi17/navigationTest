@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "214277134718",
+    "project_id": "lostdonkeypos-a69ea",
+    "storage_bucket": "lostdonkeypos-a69ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214277134718:android:d49b6745b84b6e7d2fbb2f",
+        "android_client_info": {
+          "package_name": "com.example.navigationtest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZHflsOPs4Do3u23RbJFwp3bMR2DlCyBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
